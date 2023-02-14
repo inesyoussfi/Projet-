@@ -1,0 +1,20 @@
+{% block title %}Login!{% endblock %}
+
+{% block body %}
+    {{ form_start(create_user_type) }}
+
+    {{ form_rest(create_user_type.email) }}
+
+    {{form_rest(create_user_type.firstName) }}
+
+    {{ form_rest(create_user_type.lastName) }}
+
+    {{ form_rest(create_user_type.phone) }}
+
+    {{form_rest(create_user_type.password ) }}
+
+    {{ form_end(create_user_type) }}
+{% endblock %}
+
+
+
